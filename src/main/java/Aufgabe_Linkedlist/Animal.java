@@ -4,9 +4,9 @@ public class Animal {
     //public Object add;
     String name;
 
-//    public Animal(String name) {
-////        this.name = name;
-//    }
+    public Animal(String name) {
+//        this.name = name;
+    }
 
 
     @Override

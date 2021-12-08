@@ -29,12 +29,24 @@ public class AnimalList {
 
     public String toString(AnimalList aniList){
         AnimalListItem itemName = aniList.head;
-        ArrayList<String> nameList = new ArrayList<String>();
+        String nameListe = "";
         while(itemName != null){
-            nameList.add(aniList.head.value.toString());
+            nameListe += aniList.head.value.toString()+ "->";
             head = head.next;
         }
-        return "Die NameListe ist "+ nameList;
+        nameListe = aniList.head.value.toString();
+        return "Die Liste ist "+ nameListe;
+    }
+
+
+
+//        AnimalListItem itemName = aniList.head;
+//        ArrayList<String> nameList = new ArrayList<String>();
+//        while(itemName != null){
+//            nameList.add(aniList.head.value.toString());
+//            head = head.next;
+//        }
+//        return "Die NameListe ist "+ nameList;
 
         /*
          AnimalListItem itemName = aniList.head;
@@ -47,6 +59,6 @@ public class AnimalList {
 
 
 
-    }
+
 
 }
