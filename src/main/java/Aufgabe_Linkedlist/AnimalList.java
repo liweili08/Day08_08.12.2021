@@ -26,15 +26,18 @@ public class AnimalList {
     Methode: gibt die Elemente der Liste als String zurück. z. B : eine Liste enthält: "Katze", "Elefant", "Schlange"
              => gibt “Katze -> Elefant -> Schlange” zurück
      */
-
-    public String toString(AnimalList aniList){
-        AnimalListItem itemName = aniList.head;
-        String nameListe = "";
-        while(itemName != null){
-            nameListe += aniList.head.value.toString()+ "->";
-            head = head.next;
+@Override
+    public String toString(){
+        AnimalListItem itemName = this.head;
+        if (itemName == null){
+           return "";
         }
-        nameListe = aniList.head.value.toString();
+        String nameListe = "";
+        while(itemName.next != null){
+            nameListe += itemName.value.toString()+ "->";
+            itemName = itemName.next;
+        }
+        nameListe += itemName.value.toString();
         return "Die Liste ist "+ nameListe;
     }
 

@@ -12,7 +12,6 @@ public class Main {
 
         AnimalList list1 = new AnimalList();
         AnimalListItem hund = new AnimalListItem(ani1);
-        list1.head = hund.next;
         list1.add(ani1);
         list1.add(ani2);
         list1.add(ani3);
@@ -21,7 +20,8 @@ public class Main {
         list1.add(ani4);
         list1.add(ani3);
 
-        list1.toString(list1);
+        list1.toString();
+        System.out.println(list1);
 
 
 
