@@ -1,7 +1,5 @@
 package Aufgabe_Map;
 
-import java.util.Arrays;
-
 public class StudentDB {
 
      Student[] studentArray;
@@ -28,11 +26,12 @@ public class StudentDB {
 //        }
 //    }
 
-//    public Student toList() {
-//        for (int i = 0; i < this.studentArray.length; i++) {
-//            return this.studentArray[i];       };
-//        return ;
-//    }
+    public void toList() {
+        for (int i = 0; i < this.studentArray.length; i++) {
+            System.out.println( this.studentArray[i].toString());
+        };
+        return;
+    }
 
     //Methode: toString: gibt alle Studenten formatiert als String zurück
     //vom IntelliJ hergestellt
@@ -43,23 +42,30 @@ public class StudentDB {
 //                '}';
 //    }
 
+//mit diese Methode sind alle Studenten in einer Zeile
+//    @Override
+//    public String toString() {
+//        //Student[] listArray = this.studentArray; //new String[studentsArray.length];
+//        String studentInfo = "";
+//        for (int i = 0; i < this.studentArray.length; i++) {
+//            studentInfo += this.studentArray[i].toString();
+//        }
+//        return studentInfo;
+//    }
 
+    //  //Mit dieser Methode hat man nur einen Student in einer Zeile!
     @Override
     public String toString() {
-        //Student[] listArray = this.studentArray; //new String[studentsArray.length];
-        String studentInfo = " ";
+        String studentInfo = "";
         for (int i = 0; i < this.studentArray.length; i++) {
-            studentInfo += this.studentArray[i].toString();
-                    //"Name: " + this.studentArray[i].name + ", Id:" + this.studentArray[i].studentId + ", Alte:" +
-                    //this.studentArray[i].alt +"/n";
+            System.out.println(this.studentArray[i].toString());
         }
-        //System.out.println(studentInfo);
         return studentInfo;
     }
 
 //Methode randomStudent: gibt einen zufälligen Studenten zurück (Nutze für den Zufall Math.random())
-public void randomStudent() {
-    int randomIndex = (int) (Math.random() * (this.studentArray.length - 1 + 1) + 1);
+public void randomStudent(){
+    int randomIndex = (int) (Math.random() * (this.studentArray.length-1) + 1);
     System.out.println("Die " + (randomIndex + 1) + "-te Student ist: " + this.studentArray[randomIndex]);
 }
 
