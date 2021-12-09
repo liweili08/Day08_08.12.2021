@@ -1,21 +1,43 @@
 package Aufgabe_Map;
 
 public class Student {
-    public String name;
-    public int studentId;
-
-//    public String info(){
-//        return "Id:"+ studentId + ", Name: "+ name;
-//    }
+     String name;
+     int studentId;
+     int alt;
 
     //Constructor
-    public Student(String name, int studentId) {
+    public Student(String name, int studentId, int alt) {
         this.name = name;
         this.studentId = studentId;
+        this.alt = alt;
     }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public int getStudentId() {
+//        return studentId;
+//    }
+//
+//    public void setStudentId(int studentId) {
+//        this.studentId = studentId;
+//    }
+//
+//    public int getAlt() {
+//        return alt;
+//    }
+
+//    public void setAlt(int alt) {
+//        this.alt = alt;
+//    }
 
     @Override
     public String toString() {
-        return "name='" + name + ", Id="  + studentId;
+        return "Name '" + name + ", Id: "  + studentId + "Alte: " + alt;
     }
 }
