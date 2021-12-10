@@ -23,6 +23,9 @@ public class Main {
         list1.toString();
         System.out.println(list1);
 
+        System.out.println("***********************");
+        System.out.println(list1.remove(ani2));
+
 
 
 
