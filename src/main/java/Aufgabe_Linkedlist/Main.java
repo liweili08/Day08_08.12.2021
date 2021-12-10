@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("***********************");
         System.out.println(list1.remove(ani2));
-
+        System.out.println(list1.remove(ani5));
 
 
 

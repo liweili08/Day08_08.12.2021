@@ -68,18 +68,18 @@ public class AnimalList {
             System.out.println("Es gibt noch keine Tiere in der Liste!");
         } else {
             while (removeItem.next != null) {
-                if (removeItem.value != animal) {
-                    removeListe += removeItem.value.toString() + "->";
+                if (removeItem.value.toString().equals(animal.toString())) {
                     removeItem = removeItem.next;
                 } else {
-                    removeItem = removeItem.next.next;
+                    removeListe += removeItem.value.toString() + "->";
+                    removeItem = removeItem.next;
                 }
             }
             if (removeItem.next == null){
-                if(removeItem.value != animal){
-                    removeListe += removeItem.value.toString();
-                }else {
+                if(removeItem.value.toString() .equals(animal.toString())){
                     return removeListe;
+                }else {
+                    removeListe += removeItem.value.toString();
                 }
             }
         }
