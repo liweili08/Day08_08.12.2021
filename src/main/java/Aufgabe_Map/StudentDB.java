@@ -1,8 +1,14 @@
 package Aufgabe_Map;
 
+import jdk.internal.access.JavaSecurityAccess;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class StudentDB {
 
      Student[] studentArray;
+   //  StudentMap allStudentHashMap;
 
     //Constructor
     public StudentDB(Student[] studentArray) {
@@ -73,6 +79,7 @@ public void randomStudent(){
 //        int randomIndex = (int) (Math.random() * (stuArray.length - 1 + 1) + 1);
 //        System.out.println("Die " + (randomIndex + 1) + "-te Student ist: " + stuArray[randomIndex]);
 //    }
+
 
 }
 

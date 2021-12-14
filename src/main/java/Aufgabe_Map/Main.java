@@ -1,6 +1,9 @@
 package Aufgabe_Map;
 
+import java.util.HashMap;
+
 public class Main {
+
     public static void main(String[] args) {
 
         Student[] studentsArray1 = new Student[11];
@@ -23,11 +26,21 @@ public class Main {
         myStudent.randomStudent();
 
 
+
 //studentsArray1.randomStudent();
        // System.out.println("Die Studenten Informationen :" + "/n" + studentInfo);
      //   studentsArray1.toList(studentsArray1);
 //studentsArray1.randomStudent();
 
+
+
+
+//        public void List() {
+//            HashMap<Integer, Student> studentHashMap = new HashMap<>();
+//            for (int i = 0; i < this.studentArray.length; i++) {
+//                studentHashMap.put(i,this.studentArray[i]);
+//            }
+//        }
 
     }
 }
